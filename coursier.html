@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription - Coursier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f6;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: #00a082;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #00a082;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 160, 130, 0.3);
+        }
+        
+        .checkbox-group {
+            margin-top: 5px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            accent-color: #00a082;
+        }
+        
+        .checkbox-item label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .form-col {
+            flex: 1;
+        }
+        
+        .btn {
+            background-color: #00a082;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 28px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 30px auto 0;
+            font-weight: 600;
+        }
+        
+        .btn:hover {
+            background-color: #008c70;
+        }
+        button {
+            background-color: #00a082;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 28px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 30px auto 0;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            background-color: #008c70;
+        }
+        .info-text {
+            font-size: 14px;
+            color: #777;
+            margin-top: 5px;
+        }
+        
+        .required:after {
+            content: " *";
+            color: #e74c3c;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Devenir Coursier Partenaire</h1>
+            <p>Rejoignez notre équipe et gagnez en liberté et flexibilité</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="coursier-form">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="prenom" class="required">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="nom" class="required">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Adresse email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="id" class="required">ID national</label>
+                    <input type="tel" id="id" name="id" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ville" class="required">Ville</label>
+                    <select id="ville" name="ville" required>
+                        <option value="">Sélectionnez votre ville</option>
+                        <option value="tunis">tunis</option>
+                        <option value="djerba">djerba</option>
+                        <option value="beja">beja</option>
+                        <option value="sousse">sousse</option>
+                        <option value="kelibia">kelibia</option>
+                        <option value="mehdia">mehdia</option>
+                        <option value="monastir">monastir</option>
+                        <option value="ariana">ariana</option>
+                        <option value="kef">kef</option>
+                        <option value="bizert">bizert</option>
+                    </select>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <label for="experience" class="required">Avez-vous déjà une expérience en livraison ?</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Sélectionnez une option</option>
+                        <option value="aucune">Aucune expérience</option>
+                        <option value="moins_1an">Moins d'un an</option>
+                        <option value="1_3ans">1 à 3 ans</option>
+                        <option value="plus_3ans">Plus de 3 ans</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="disponibilite" class="required">Disponibilité</label>
+                    <select id="disponibilite" name="disponibilite" required>
+                        <option value="">Sélectionnez votre disponibilité</option>
+                        <option value="temps_plein">Temps plein</option>
+                        <option value="temps_partiel">Temps partiel</option>
+                        <option value="weekend">Weekends uniquement</option>
+                        <option value="soiree">Soirées uniquement</option>
+                    </select>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions" class="required">J'accepte les conditions générales d'utilisation et la politique de confidentialité ou <a href="index.html">retour a l'acceuil</a></label>
+                </div>
+                
+                <button type="submit" class="btn">Soumettre ma candidature</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choisir une ville</title>
+  <link rel="stylesheet" href="localisation.css" />
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="modal">
+    <button class="close-btn" onclick="fermerModal()">×</button>
+    <h2>Où devons-nous livrer ?</h2>
+
+    <div class="search-bar">
+      <span class="icon">🔍</span>
+      <input type="text" placeholder="tunisie" />
+      
+    </div>
+
+    
+
+    <a href="index.html"><button class="position-btn">Confirmer</button></a>
+    <p class="powered">Powered by <span class="google">Google</span></p>
+  </div>
+
+  <script>
+    function fermerModal() {
+      document.getElementById("modal").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
