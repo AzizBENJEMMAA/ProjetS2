@@ -20,6 +20,22 @@
             height: 100vh;
         }
         
+        .header {
+            width: 100%;
+            padding: 15px 30px;
+            background-color:;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            height: 90px;
+            width: auto;
+        }
+
         .container {
             background-color: white;
             border-radius: 10px;
@@ -137,10 +153,13 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <img src="Fastry LOGO blanc.png" alt="Logo" class="logo">
+    </header>
     <div class="container">
         <div class="tabs">
             <div class="tab active" id="login-tab">Se connecter</div>
-            <div class="tab" id="signup-tab"><a href="inscrit.html">s'inscrire</a></div>
+            <div class="tab" id="signup-tab"><a href="inscritAdmin.html">s'inscrire</a></div>
         </div>
         
         <div class="form-container">
