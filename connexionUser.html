@@ -28,6 +28,22 @@
             overflow: hidden;
         }
         
+        .header {
+            width: 100%;
+            padding: 15px 30px;
+            background-color:;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            height: 90px;
+            width: auto;
+        }
+        
         .tabs {
             display: flex;
             border-bottom: 1px solid #e5e5e5;
@@ -137,15 +153,18 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <img src="Fastry LOGO blanc.png" alt="Logo" class="logo">
+    </header>
     <div class="container">
         <div class="tabs">
             <div class="tab active" id="login-tab">Se connecter</div>
-            <div class="tab" id="signup-tab"><a href="inscrit.html">s'inscrire</a></div>
+            <div class="tab" id="signup-tab"><a href="inscritUser.html">s'inscrire</a></div>
         </div>
         
         <div class="form-container">
             <div class="form active" id="login-form">
-                <h2>Connexion</h2>
+                <h2>Connexion Utilisateur</h2>
                 <form id="form-login">
                     <div class="input-group">
                         <label for="login-email">Email</label>
