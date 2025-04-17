@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family:cursive;
   background-color: #fff;
   color: #222;
 }
@@ -18,6 +18,7 @@ header {
   width: 100%;
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
+  
 }
 
 header .container {
@@ -97,6 +98,7 @@ nav {
 
 .nav-link {
   color: white;
+  font-family:cursive;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: block;
@@ -152,10 +154,12 @@ nav {
 .btn-login {
   background: #00a082;
   color: white;
+  font-family:cursive;
   padding: 10px 18px;
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
+  
 }
 /* FIN HEADER */
 .hero {
@@ -173,14 +177,16 @@ nav {
 }
 
 .hero-text h1 {
-  font-size: 36px;
+  font-size: 52px;
+  font-family:cursive;
   margin-bottom: 10px;
   color: #ffc93c;
 }
 
 .hero-text p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 25px;
+  font-family:cursive;
   color: #ffc93c;
 }
 
@@ -188,6 +194,7 @@ nav {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-left: 210px;
 }
 
 .search-box input {
@@ -210,11 +217,6 @@ nav {
 .hero-img img {
   max-width: 300px;
   height: auto;
-}
-
-.wave-top, .wave-bottom {
-  height: 50px;
-  background: white;
 }
 
 .restaurant-grid {
@@ -246,15 +248,52 @@ nav {
   border-radius: 10px;
   font-weight: bold;
   font-size: 14px;
+  font-family:cursive;
 }
+/*
+3RD SECTIONNNNNNNNNNN
 
-
+*/
 .categories {
-  text-align: center;
-  padding: 40px 20px;
-  
+  display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alignement à gauche */
+            gap: 20px; /* Espace entre les groupes */
+}
+.categories h2{
+  font-size: 52px;
+  font-family:cursive;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #00a082;
+  margin-left: 40px;
+}
+.restaurants-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px; /* Espace entre les éléments */
+  margin-bottom: 50px;
+  margin-left: 60px;
 }
 
+.restaurant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.restaurant-item img{
+  height: 140px;
+  width: 140px;
+}
+.restaurant-item button{
+  padding: 8px 10px;
+  border: none;
+  background-color: #00a082;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
 .icons {
   display: flex;
   justify-content: center;
@@ -265,28 +304,37 @@ nav {
 
 .icon {
   text-align: center;
+  font-family:cursive;
   color: #ffc93c;
 }
 
 .icon img {
-  width: 80px;
-  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin-left: 60px;
 }
 /* 3rd section */
 .hero {
   text-align: center;
+  font-family:cursive;
   padding: 40px 20px;
   background-color: #41978e;
 }
 .hero-text h2 {
   margin-bottom: 20px;
   font-size: 60px;
-  color: #000000;
+  color: #ffc93c;
+  font-family:cursive;
 }
 .hero-text p {
   margin-bottom: 20px;
   font-size: 18px;
   color: #ffc93c;
+  font-family:cursive;
 }
 
 
@@ -304,7 +352,12 @@ nav {
   object-fit: cover; /* pour éviter la déformation */
   
 }
-
+.infos h2{
+  font-family:cursive;
+}
+.infos p{
+  font-family:cursive;
+}
 .info-blocks {
   display: flex;
   justify-content: center;
@@ -312,6 +365,7 @@ nav {
   margin: 30px 0;
   flex-wrap: wrap;
   color: #ffc93c;
+  font-family:cursive;
 }
 
 .info-blocks img {
@@ -327,22 +381,26 @@ nav {
   color: white;
   padding: 12px 24px;
   text-decoration: none;
+  font-family:cursive;
   border-radius: 20px;
 }
 
 .cities {
   background-color: #41978e;
   text-align: center;
-  
+  font-family:cursive;
   padding: 30px 20px;
 }
-
+.cities h2{
+  font-family:cursive;
+}
 .city-list span {
   background-color: white;
   padding: 10px 15px;
   border-radius: 15px;
   margin: 5px;
   display: inline-block;
+  font-family:cursive;
 }
 * {
   margin: 0;
@@ -354,6 +412,7 @@ nav {
 body {
   background-color: #f5f7f6;
   padding: 20px;
+  font-family:cursive;
 }
 
 .opportunities-container {
@@ -385,7 +444,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-  border: 10px solid #00a082;
+  border: 10px solid #3b3333;
 }
 
 .circle-image img {
@@ -399,6 +458,7 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
   color: #ffc93c;
+  font-family:cursive;
 }
 .back{
   background-color: #41978e;
@@ -408,6 +468,7 @@ body {
   line-height: 1.5;
   margin-bottom: 20px;
   color: #333;
+  font-family:cursive;
 }
 
 .inscription-button {
@@ -421,6 +482,7 @@ body {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  font-family:cursive;
 }
 
 .inscription-button:hover {
@@ -429,6 +491,7 @@ body {
 section {
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family:cursive;
 }
 /*FIN BODY */
 footer {
@@ -438,6 +501,7 @@ footer {
   width: 100%;
   border-top-right-radius: 10%;
   border-top-left-radius: 10%;
+  font-family:cursive;
 }
 footer .foot-container{
   display: flex;
@@ -513,6 +577,7 @@ footer .foot-container{
   padding: 0.5rem 1rem;
   display: inline;
   transition: background-color 0.3s;
+  font-family:cursive;
 }
 
 .foot-nav-link:hover {
