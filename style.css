@@ -159,7 +159,12 @@ nav {
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
-  
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.btn-login:hover,.btn-city:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 /* FIN HEADER */
 .hero {
@@ -199,19 +204,13 @@ nav {
 
 .search-box input {
   padding: 12px;
-  width: 250px;
   border: none;
   border-radius: 8px;
 }
 
 .search-box button {
-  padding: 12px 20px;
+  background-color: #41978e;
   border: none;
-  background-color: #00a082;
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
 .hero-img img {
@@ -383,6 +382,8 @@ nav {
   text-decoration: none;
   font-family:cursive;
   border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .cities {
@@ -483,6 +484,8 @@ body {
   display: inline-block;
   margin-top: 10px;
   font-family:cursive;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .inscription-button:hover {
